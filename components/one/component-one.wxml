@@ -1,0 +1,4 @@
+<!--components/one/component-one.wxml-->
+<view>
+ <text bindtap='tap'>保持激情，{{text}}</text>
+</view>

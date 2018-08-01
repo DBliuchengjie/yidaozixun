@@ -1,0 +1,11 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <block wx:for="{{picArr}}" wx:for-item="item" wx:key="{{item.name}}">
+    <image bind:tap='clickImage' src="{{item.url}}" data-url="{{item.url}}"></image>
+    <text class="log-item">{{item.name}}</text>
+  </block>
+  <!-- 大图 -->
+  <view animation="{{animationData}}" class='activeImgBox' hidden='{{hiddenImg}}' catchtap='closeImgActive' catchtouchmove='touchmove'>
+    <image class='targetImg' src="{{activeImg}}"></image>
+  </view>
+</view>

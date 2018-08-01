@@ -1,0 +1,4 @@
+<!--pages/detail/detail.wxml-->
+<text>传递来的id={{id}}</text>
+<!-- 组件使用 -->
+<component-one text="{{context}}" bind:myEvent="clickComponent"></component-one>
